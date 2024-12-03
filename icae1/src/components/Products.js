@@ -2,7 +2,7 @@
 import '../assets/CSS/layout.css';
 
 
-export default function Products(){
+export default function Products( ){
    
     return(
         <>
