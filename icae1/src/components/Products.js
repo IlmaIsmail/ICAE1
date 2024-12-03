@@ -5,9 +5,13 @@ import { useState } from 'react';
 import Product from './Product';
 import Cart from './Cart';
 
+export default function Products(){
 
+    const [cart,setCart]=useState([]);
 
-export default function Products( ){
+    const addToCart = (flower) =>{
+        
+    }
    
     return(
         <>
