@@ -1,7 +1,7 @@
 import '../assets/CSS/layout.css';
  
 
-export default function Product({flower}){
+export default function Product({flower,onAddToCart}){
     
     return(
         <div className="grid-item">
@@ -9,7 +9,7 @@ export default function Product({flower}){
             <div class="card">
                 <img src={require(`../assets/image/${flower.img}`)} alt={flower.name}/>
                 <div class="card-body">
-                    <h5 class="card-title">Price:</h5>
+                    <h5 class="card-title">Price:{flower.price}</h5>
                     <div class="quantity-container">
                         <label for="quantity">Quantity:</label>
                         <input type="number" id="quantity" name="quantity" />

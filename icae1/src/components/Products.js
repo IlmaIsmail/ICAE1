@@ -40,7 +40,7 @@ export default function Products(){
                             <Product 
                                 key={flower.id}
                                 flower={flower}
-                                onChange={addToCart}/>
+                                onAddToCart={addToCart}/>
                         ))
                     }
                 </div>
