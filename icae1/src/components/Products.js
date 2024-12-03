@@ -1,5 +1,10 @@
 
 import '../assets/CSS/layout.css';
+import { flowers } from './FlowerDB';
+import { useState } from 'react';
+import Product from './Product';
+import Cart from './Cart';
+
 
 
 export default function Products( ){
