@@ -12,18 +12,16 @@ export default function Products(){
     const addToCart = (flower) =>{
         const prevailingItem = cart.find((item) => item.id === flower.id)
         if(prevailingItem){
-            setItem(
+            setCart(
                 
                     cart.map((item)=>
-                        item.id === flower.id ?
-                        {
-                            ..cart.item,qty:item.qty +flower.qty
-                        } : 
+                        item.id === flower.id ? {
+                            ...item,qty: item.qty +flower.qty} :item
                     )
                 
             );
         }else{
-            setItem([...cart,{...flower}])
+            setCart([...cart,{...flower}])
         }
     
     }
@@ -51,6 +49,7 @@ export default function Products(){
             <div className="item3">
                 {
                 //cart
+                <Cart cart={cart}/>
                 }
             </div>
         </>
