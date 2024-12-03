@@ -10,7 +10,22 @@ export default function Products(){
     const [cart,setCart]=useState([]);
 
     const addToCart = (flower) =>{
-        
+        const prevailingItem = cart.find((item) => item.id === flower.id)
+        if(prevailingItem){
+            setItem(
+                
+                    cart.map((item)=>
+                        item.id === flower.id ?
+                        {
+                            ..cart.item,qty:item.qty +flower.qty
+                        } : 
+                    )
+                
+            );
+        }else{
+            setItem([...cart,{...flower}])
+        }
+    
     }
    
     return(
