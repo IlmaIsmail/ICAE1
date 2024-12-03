@@ -1,6 +1,6 @@
 export default function Cart({cart}) {
 
-    const grandtotal=cart.reduce(
+    const grandTotal=cart.reduce(
         (total,item) => total + item.price*item.qty,0
     );
     
